@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+<title>ShowFinder :: Listing Title</title>
+<link rel="Shortcut Icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="images/Icon-72@2x.png"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC1ShHfOK0t9bZwfe0Sx9wc85issO_Qy3c&sensor=false"></script>
+<script type="text/javascript">
+      var map;
+      function initialize() {
+        var myOptions = {
+          zoom: 8,
+          center: new google.maps.LatLng(-34.397, 150.644),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('map_canvas'),
+            myOptions);
+			var image = 'images/icn-marker.png';
+			var myLatLng = myOptions.center; 
+			var beachMarker = new google.maps.Marker({
+		        position: myLatLng,
+		        map: map,
+		        icon: image
+		    });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+	  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link href='http://fonts.googleapis.com/css?family=Exo:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "02df2d1d-a4e4-4e02-ac00-8ffc56acaf49"}); </script>
+</head>
+<body class="page-permalink">
+<div class="root">
+  <div class="page">
+    <div class="main">
+	  <header class="top">
+		<div class="wrap clearfix">
+			<div id="perm-logo"></div>
+			<div id="tagline">
+				<p><span>Your personal automotive event guide</span><br />
+				Available for <a href="http://example.com/"><strong>iPhone</strong></a> &amp; <a href="http://example.com/"><strong>Android</strong></a></p>
+			</div>
+	    </div>
+	  </header>
+      <div class="wrap clearfix">
+		<!-- LEFT COLUMN -->
+		<div class="show-details">
+			<div class="inner">
+				<header>
+					<h1>10th Annual Fathers Day Car Show</h1>
+					<p class="tag"><span>SHOW</span></p>
+					<p class="tag"><span>AUCTION</span></p>
+				</header>
+			
+				<section id="date">
+					<h2>Saturday Feb 7th 2012</h2>
+					<p>Check flyer for more details.</p>
+					<p id="admission"><strong>Admission</strong>: Free</p>
+				</section>
+				<section id="show-info">
+					<h4>Show Info</h4>
+					<p>9:00am to 6:00pm<br />
+					<a href="#">View Flyer PDF</a></p>
+				</section>
+				<section id="registration-info">
+					<h4>Registration Info</h4>
+					<p><strong>Fee:</strong> $25.00<br />
+					$15 pre-registration discount if you register before May 1st!</p>
+				</section>
+				<section id="host-info">
+					<h4>Host Info</h4>
+					<p>Aces Car Club<br />
+					<a href="#">acescarclub.com</a><br />
+					<a href="#">bigdaddy55@gmail.com</a><br />
+					(360) 555-5555</p>
+				</section>
+				<footer class="page-footer">
+				  <div class="wrapper clearfix">
+			      <p class="copyright">&copy; 2012 SHFT L.L.C., INC. <span class="nav-divider">|</span></p>
+			      <nav>
+			        <ul>
+			          <li><a href="contact/">Contact</a> <span class="nav-divider">|</span> </li>
+			          <li><a href="privacy/">Privacy</a> <span class="nav-divider">|</span> </li>
+			          <li><a href="terms/">Terms</a></li>
+			        </ul>
+			      </nav>
+			    </div>
+			  </footer>
+			</div>
+		</div>
+		
+		<!-- RIGHT COLUMN -->
+		<div class="show-meta">
+			<div class="inner">
+				<section>
+					<div>
+						<p class="tag green"><span>new</span></p>
+						<p class="tag green"><span>updated</span></p>
+					</div>
+					<div class="map"><div id="map_canvas"></div></div>
+				</section>
+				<section id="address">
+					<h4>Everett Community College</h4>
+					<p><a href="#">2000 Tower Street</a><br />
+					<a href="#">Everett WA 98201</a>
+					</p>
+				</section>
+				<section id="sharing">
+					<h4>Share this event</h4>
+					<!-- SHARING -->
+					<p><span class='st_facebook_hcount' displayText='Facebook'></span>
+					<span class='st_twitter_hcount' displayText='Tweet'></span>
+					<span class='st_email_hcount' displayText='Email'></span></p>
+				</section>
+				<p class="btn"><a href="#">Suggest Changes</a></p>
+			</div>
+		</div>
+
+
+	  </div>
+	  <!-- .wrap -->
+    </div>
+    <!-- .main -->
+    
+  </div>
+  <!-- .page -->
+</div>
+<!-- .root -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32207741-2']);
+  _gaq.push(['_setDomainName', 'shwfndr.com']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
